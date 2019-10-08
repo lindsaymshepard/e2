@@ -15,31 +15,34 @@
  
     <h2>Instructions</h2>
     <ul>
-       <li>Player A and Player B choose Rock, Paper, or Scissors.</li>
+       <li>Player A chooses Rock, Paper, or Scissors.</li>
+       <li>Player B is played by the computer</li>
        <li>A tie is declared if both players throw the same move.</li>
        <li>Rock beats Scissors, Scissors beats Paper, Paper beats Rock.</li>
     </ul>   
 
+    <h2>Play!</h2>
      <form method= 'GET' action= 'process.php'>
 
-            <input type='radio' value='rock'  name='choice'>
+            <input id="rock" type='radio' value='0'  name='choice'>
             <label for ='rock'> Rock </label>
 
-            <input type='radio' value='paper' name='choice'>
+            <input id="paper" type='radio' value='1' name='choice'>
             <label for ='paper'> Paper </label>
 
-            <input type='radio' value='paper' name='choice'>
+            <input id="scissors" type='radio' value='2' name='choice'>
             <label for ='scissors'> Scissors </label>
 
             <button type='submit'> Choose...</button>
     </form>
 
-    <h2>Results</h2>
+    <?php if($showResults) { ?>
     <ul>
-        <li>Player A: <?=$moveA?></li>
-        <li>Player B: <?php echo $moveB; ?></li>
-        <li>Winner: <?php echo $winner; ?></li>
-     </ul>   
+        <li>You chose: <?php echo $results['choice a']; ?> </li>
+        <li>Player B chose: <?php echo $results['choice b']; ?></li>
+        <li><?=$results['winner']?></li>
+      </ul>
+    <?php } ?>
 
 </body>
 
