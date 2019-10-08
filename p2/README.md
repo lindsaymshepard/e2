@@ -14,11 +14,9 @@
     * Use the conditional statements if, elseif, and else to show which player won that round
 
 ## Outside resources
-
-    * For help with conditionals 
-        * https://www.w3schools.com/php/php_if_else.asp 
+* For help with conditionals 
+    * https://www.w3schools.com/php/php_if_else.asp 
 
 
 ## Notes for instructor
-
-    * This was a really fun assignment. It wasn't too difficult, but I feel like it really made me think about the arrays and conditionals and made me realize I knew more than I thought I did. Your videos truly teach a student- and I've taken a lot of courses here at Harvard and not had this kind of instruction for programming or this kind of assignment. Thank you!
+ * This was a really fun assignment. It wasn't too difficult, but I feel like it really made me think about the arrays and conditionals and made me realize I knew more than I thought I did. Your videos truly teach a student- and I've taken a lot of courses here at Harvard and not had this kind of instruction for programming or this kind of assignment. Thank you!
