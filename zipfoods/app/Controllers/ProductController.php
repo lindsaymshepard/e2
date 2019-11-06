@@ -5,12 +5,30 @@ namespace App\Products;
 class ProductController extends ProductController
 
 {
+    private $products; 
+
+    public function _construct($app) 
+    {
+        parent::_construct($app);
+        $this->products = new Products($this->app->path('database/products.json'));
+
+    }
+
+
     public function index ()
     {
-        $products = new Products($this->app->path('database/products.json'));
 
-        dump($products);
 
-        return 'Show all the products here...';
+        return $this->app->view('products.index', ['products' => $this->products->getAll()]);
+    }
+
+    public function show() 
+    {   
+        
+        $id = $this->app->param('id');
+
+        $product = $this->products->getByID($id);
+
+        return $this->app->view('products.show', ['product'=> $product]);
     }
 }
