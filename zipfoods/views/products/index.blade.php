@@ -1,20 +1,20 @@
 @extends('templates.master')
 
 @section('title')
-    All Products
+All Products
 @endsection
 
 @section('content')
 
 <h2>All Products</h2>
 
-    <div id='product-index'>
+<div id='product-index'></div>
 
-    @foreach ($products as $products)
-        <a href='/product?id={{ $product['id'] }}'
-        <div class='product'>
-        <div class='product-name'> {{ $product['name'] }}</div>
-        <img class='product-thumb' src="/images/products/{{ $product['id'] }}"
-    @endreach
+@foreach ($products as $product)
+<a href='/product?id={{ $product["id"] }}'></a>
+<div class='product'></div>
+<div class='product-name' {{ $product['name'] }}></div>
+<img class='product-thumb' src="/images/products/{{ $product['id'] }}.jpg">
+@endforreach
 
 @endsection
