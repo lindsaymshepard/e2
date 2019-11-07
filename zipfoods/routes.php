@@ -3,7 +3,7 @@
 return [
     '/' => ['AppController', 'index'],
     '/contact' => ['AppController', 'contact'],
-    '/products' => ['AppController', 'index'],
-    '/product' => ['AppController', 'show'],
+    '/products' => ['ProductController', 'index'],
+    '/product' => ['ProductController', 'show'],
     '/about' => ['AppController', 'about'],
 ];
