@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Controllers;
+use App\Products;
+
+namespace App;
 
 class ProductController extends Controller
 {
@@ -8,7 +10,7 @@ class ProductController extends Controller
 
     public function __construct($app)
     {
-        parent::_construct($app);
+        parent::__construct($app);
         $this->products = new Products($this->app->path('database/products.json'));
     }
 
