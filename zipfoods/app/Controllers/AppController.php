@@ -15,3 +15,10 @@ class AppController extends Controller
         ]);
     }
 }
+
+
+    public function practice2()
+    {
+        dump($this->app->db()->all('products'));
+
+    }
