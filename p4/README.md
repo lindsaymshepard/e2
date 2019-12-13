@@ -6,3 +6,11 @@ The goal of this software is to provide students an introduction to working with
 
 + __Documentation:__ <https://hesweb.dev/e2/notes#/php/e2framework/installation>
 + __Guide:__ <https://hesweb.dev/e2/notes#/php/frameworks/intro>
+
+
+# Project 4
++ By: Lindsay Shepard
++ Production URL: <http://p4.lindsayshepard.me>
+
+## Outside resources
+*N/A*
