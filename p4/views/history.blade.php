@@ -8,11 +8,9 @@
     
     <h2>Game History</h2>
 
-    /*game history content*/
-
 <ul>
 @foreach($history as $history)
-    <li>{{ $history['title'] }}</li>
+    <li><a href="/details?id={{ $history['id'] }}">{{ $history['title'] }} ({{ $history['history'] }})</a></li>
 @endforeach
 </ul>
 
