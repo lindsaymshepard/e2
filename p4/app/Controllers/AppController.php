@@ -13,7 +13,11 @@ class AppController extends Controller
 
     public function history() 
     {
-        return $this->app->view('history');
+        $history = $this->app->db()->all('history');
+
+        dump($history);
+
+        return $this->app->view('history', ['history' => $history]);
     }
 
     public function details() 

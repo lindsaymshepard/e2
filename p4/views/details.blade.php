@@ -4,10 +4,10 @@
     Game Details
 @endsection
 
-@section('content')
+@section('details')
     
     <h2>Game Details</h2>
 
     /*game details content*/
 
-@endsection
+@endsection 

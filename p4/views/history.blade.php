@@ -10,4 +10,11 @@
 
     /*game history content*/
 
+<ul>
+@foreach($history as $history)
+    <li>{{ $history['title'] }}</li>
+@endforeach
+</ul>
+
+
 @endsection
